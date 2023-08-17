@@ -13,8 +13,6 @@ dag = DAG(
     description='A simple DAG that prints and logs a message',
     start_date=datetime(2023, 7, 4),
     schedule_interval=None,
-    queue= 'default'
-
 )
 
 print_and_log_task = PythonOperator(
